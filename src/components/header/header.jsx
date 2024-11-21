@@ -1,12 +1,21 @@
+import { HiOutlineUser } from 'react-icons/hi2';
+import { FiShoppingCart } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
+
+import { FiAlignLeft } from 'react-icons/fi';
+
 const Header = () => {
   return (
-    <header className="bg-[#F5F3FF]">
+    <header className="bg-[#F5F3FF] container mx-auto max-w-screen-xl">
       <div className="container mx-auto flex justify-between items-center p-4">
+        <a href="#" className="lg:hidden text-[25px] mr-3">
+          <FiAlignLeft></FiAlignLeft>
+        </a>
         <a href="#" className="text-2xl font-bold">
           <span className="text-blue-500">My</span>Brand
         </a>
 
-        <div className="flex items-center flex-1 justify-between">
+        <div className="lg:flex items-center flex-1 justify-between hidden ">
           <nav className="hidden flex-1 justify-center md:flex space-x-6">
             <a
               href="#home"
@@ -43,9 +52,27 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="hidden md:block px-4 py-2 ">
-
-          
+        <div className="flex-1 md:flex-none justify-end flex">
+          <div className="flex gap-4 md:gap-3">
+            <div className="lg:hidden ">
+              <a href="#" className="text-[24px]">
+                <FiSearch />
+              </a>
+            </div>
+            <div className="">
+              <a href="#" className="text-[24px] relative">
+                <span className="w-5 h-5 text-white absolute right-[-8px] top-[-5px] bg-black rounded-full flex justify-center items-center text-[11px]">
+                  10
+                </span>
+                <FiShoppingCart />
+              </a>
+            </div>
+            <div className="">
+              <a href="#" className="text-[24px]">
+                <HiOutlineUser />
+              </a>
+            </div>
+          </div>
         </div>
 
         <button
