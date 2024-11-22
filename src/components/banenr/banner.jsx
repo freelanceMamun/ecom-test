@@ -4,6 +4,11 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { FaCarSide } from 'react-icons/fa';
 import { AiOutlineUndo } from 'react-icons/ai';
 import { AiOutlineCreditCard } from 'react-icons/ai';
+
+import shipIcon from '../../asset/truck-delivery.svg';
+import EXCHANGE from '../../asset/exchange-01.svg';
+import payment from '../../asset/payment-02.svg';
+
 import optonImg from '../../asset/option1.png';
 const Banner = () => {
   return (
@@ -45,7 +50,7 @@ const Banner = () => {
         <div className="container z-10 flex flex-wrap gap-7 items-center justify-between mx-auto max-w-screen-xl p-4">
           <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
-              <FaCarSide></FaCarSide>
+              <img src={shipIcon.src} alt="SHIPPING" />
             </div>
             <div>
               <h4>FREE SHIPPING</h4>
@@ -56,7 +61,7 @@ const Banner = () => {
           </div>
           <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
-              <AiOutlineUndo></AiOutlineUndo>
+              <img src={EXCHANGE.src} alt="EXCHANGE"></img>
             </div>
             <div>
               <h4>7 DAYS EXCHANGE</h4>
@@ -67,7 +72,7 @@ const Banner = () => {
           </div>
           <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
-              <AiOutlineCreditCard></AiOutlineCreditCard>
+              <img src={payment.src} alt="payment" />
             </div>
             <div>
               <h4>100% PAYMENT SECURE</h4>

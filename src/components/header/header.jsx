@@ -1,9 +1,10 @@
 import { HiOutlineUser } from 'react-icons/hi2';
 import { FiShoppingCart } from 'react-icons/fi';
 import { FiSearch } from 'react-icons/fi';
-
 import { FiAlignLeft } from 'react-icons/fi';
-
+import userLogo from '../../asset/user.svg';
+import Logo from '../../asset/logo (1).png';
+import shopinglogo from '../../asset/shopping.svg';
 const Header = () => {
   return (
     <header className="bg-[#F5F3FF] container mx-auto max-w-screen-xl">
@@ -12,7 +13,7 @@ const Header = () => {
           <FiAlignLeft></FiAlignLeft>
         </a>
         <a href="#" className="text-2xl font-bold">
-          <span className="text-blue-500">My</span>Brand
+          <img src={Logo.src} alt="brand-logo" />
         </a>
 
         <div className="lg:flex items-center flex-1 justify-between hidden ">
@@ -53,7 +54,7 @@ const Header = () => {
         </div>
 
         <div className="flex-1 md:flex-none justify-end flex">
-          <div className="flex gap-4 md:gap-3">
+          <div className="flex gap-4 md:gap-5">
             <div className="lg:hidden ">
               <a href="#" className="text-[24px]">
                 <FiSearch />
@@ -64,12 +65,12 @@ const Header = () => {
                 <span className="w-5 h-5 text-white absolute right-[-8px] top-[-5px] bg-black rounded-full flex justify-center items-center text-[11px]">
                   10
                 </span>
-                <FiShoppingCart />
+                <img src={shopinglogo.src} alt="shoping" />
               </a>
             </div>
             <div className="">
-              <a href="#" className="text-[24px]">
-                <HiOutlineUser />
+              <a href="#">
+                <img src={userLogo.src} alt="user"></img>
               </a>
             </div>
           </div>
