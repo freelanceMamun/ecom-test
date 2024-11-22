@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       </Head>
       <body className={`${manrope.className}`}>
         <Header></Header>
