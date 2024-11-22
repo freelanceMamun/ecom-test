@@ -7,8 +7,10 @@ import productData from '@/util/productData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowLeft } from 'react-icons/fa6';
 import { FaArrowRight } from 'react-icons/fa6';
-
 import { Autoplay, Navigation } from 'swiper/modules';
+
+import ProductSecondCard from '../productCard/productSecondCard';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -55,7 +57,7 @@ const FeatureDeal = () => {
           {productData.map((value) => {
             return (
               <SwiperSlide key={value.id}>
-                <ProductCard data={value}></ProductCard>
+                <ProductSecondCard data={value}></ProductSecondCard>
               </SwiperSlide>
             );
           })}

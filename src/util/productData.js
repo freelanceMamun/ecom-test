@@ -12,6 +12,8 @@ const productData = [
     name: 'Indian Sharee',
     price: '2,300',
     image: ProductImg1,
+    offer: 'up to 40%',
+    ratting: [],
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const productData = [
     price: '2,300',
     image: ProductImg2,
     ratting: [],
+    offer: ' 40%',
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ const productData = [
     price: '2,300',
     image: ProductImg3,
     ratting: [],
+    offer: '40%',
   },
   {
     id: 4,
@@ -33,6 +37,7 @@ const productData = [
     price: '2,300',
     image: ProductImg4,
     ratting: [],
+    offer: '40%',
   },
   {
     id: 5,
@@ -40,6 +45,7 @@ const productData = [
     price: '2,300',
     image: ProductImg5,
     ratting: [],
+    offer: '40%',
   },
   {
     id: 6,

@@ -9,7 +9,7 @@ const ProductSecondCard = (data) => {
 
   return (
     <div className="bg-white p-2 rounded-2xl">
-      <div className="bg-[#F6F5FD] rounded-lg">
+      <div className="bg-[#F6F5FD] rounded-lg  relative">
         <Link href={`/product/${data.data.id}`}>
           <img
             className="w-full h-[287px] object-contain"
@@ -17,8 +17,12 @@ const ProductSecondCard = (data) => {
             alt={'Sharee'}
           />
         </Link>
+        <div className="offer bg-[#7E53D4] w-11 h-[70px] right-2  rounded-b-full text-center  text-white absolute top-0">
+          <p className="text-[14px] font-bold">
+            up <br></br> to {data.data.offer}
+          </p>
+        </div>
       </div>
-
       <div className="review pt-4 pl-2">
         <div className="flex gap-1">
           <img src={start.src} alt="star" />
