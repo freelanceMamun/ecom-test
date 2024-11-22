@@ -1,7 +1,7 @@
-import ProductImg1 from '../asset/download.jpeg';
-import ProductImg2 from '../asset/hmgoepprod90-jpg.jpeg';
-import ProductImg3 from '../asset/p-d2.jpeg';
-import ProductImg4 from '../asset/p-.jpeg';
+import ProductImg1 from '../asset/PexelsPhotobyMuneebMalhotra.png';
+import ProductImg2 from '../asset/Pexels Photo by Bruno Palace .png';
+import ProductImg3 from '../asset/Pexels Photo by Bruno Palace.png';
+import ProductImg4 from '../asset/Pexels Photo by Ron Lach.png';
 const productData = [
   {
     id: 1,

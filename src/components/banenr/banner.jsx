@@ -1,14 +1,17 @@
 import React from 'react';
-import background from '../../asset/h3-slide-2.jpg';
+import background from '../../asset/hero.png';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { FaCarSide } from 'react-icons/fa';
 import { AiOutlineUndo } from 'react-icons/ai';
 import { AiOutlineCreditCard } from 'react-icons/ai';
-
+import optonImg from '../../asset/option1.png';
 const Banner = () => {
   return (
     <>
-      <div className="h-[80vh] bg-black">
+      <div
+        className="h-[80vh] bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${background.src})` }}
+      >
         <div className="container h-[100%] flex items-center justify-center mx-auto max-w-screen-xl p-4">
           <div className="">
             <div className="text-center text-white">
@@ -35,9 +38,12 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#6441C2E5] py-4text-white">
-        <div className="container h-[100%] flex flex-wrap gap-7 items-center justify-between mx-auto max-w-screen-xl p-4">
-          <div className="text-white flex gap-3">
+      <div
+        className="py-4  relative before:top-0 before:right-0 before:absolute before:w-full before:h-full before:bg-[#6341c2d0] text-white bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${optonImg.src})` }}
+      >
+        <div className="container z-10 flex flex-wrap gap-7 items-center justify-between mx-auto max-w-screen-xl p-4">
+          <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
               <FaCarSide></FaCarSide>
             </div>
@@ -48,7 +54,7 @@ const Banner = () => {
               </p>
             </div>
           </div>
-          <div className="text-white flex gap-3">
+          <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
               <AiOutlineUndo></AiOutlineUndo>
             </div>
@@ -59,7 +65,7 @@ const Banner = () => {
               </p>
             </div>
           </div>
-          <div className="text-white flex gap-3">
+          <div className="text-white flex gap-3 z-10 ">
             <div className="text-[28px]">
               <AiOutlineCreditCard></AiOutlineCreditCard>
             </div>

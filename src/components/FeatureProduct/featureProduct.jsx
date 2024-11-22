@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowLeft } from 'react-icons/fa6';
 import { FaArrowRight } from 'react-icons/fa6';
 
+
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
@@ -30,7 +32,7 @@ const featureProduct = () => {
           }}
           navigation={{ nextEl: '.arrow-left', prevEl: '.arrow-right' }}
           modules={[Pagination, Navigation]}
-          spaceBetween={20}
+          spaceBetween={24}
           slidesPerView={4}
         >
           {productData.map((value) => {

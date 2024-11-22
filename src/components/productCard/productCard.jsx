@@ -10,7 +10,7 @@ const ProductCard = (data) => {
       <div className="bg-[#F6F5FD] rounded-lg">
         <Link href={`/product/${data.data.id}`}>
           <img
-            className="w-full h-[315px] object-contain"
+            className="w-full h-[287px] object-contain"
             src={data.data.image.src}
             alt={'Sharee'}
           />
