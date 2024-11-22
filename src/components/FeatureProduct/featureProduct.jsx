@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 
 const featureProduct = () => {
   return (
-    <div className="container mx-auto max-w-screen-xl my-16 mb-0 relative">
+    <div className="container mx-auto max-w-screen-xl my-16 mb-0 relative px-5 md:px-4 xl:px-0">
       <div className="py-6">
         <h4 className="text-[#7E53D4] text-[19px]">FEATURED PRODUCT</h4>
         <h3 className="text-black font-bold text-[28px]">New Arrivals</h3>
@@ -29,9 +29,27 @@ const featureProduct = () => {
             clickable: true,
           }}
           navigation={{ nextEl: '.arrow-left', prevEl: '.arrow-right' }}
-          modules={[Pagination, Navigation]}
-          spaceBetween={24}
-          slidesPerView={4}
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={15}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 24,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 24,
+            },
+          }}
         >
           {productData.map((value) => {
             return (
@@ -41,7 +59,7 @@ const featureProduct = () => {
             );
           })}
         </Swiper>
-        <div className=" absolute top-10 right-0 flex gap-3">
+        <div className=" absolute lg:top-10 top-8 xl:right-0 right-4 flex gap-3">
           <button className="arrow-right arrow border-[#7E53D4] flex items-center justify-center border w-8 h-8 rounded-full">
             <FaArrowLeft
               fill="#7E53D4"

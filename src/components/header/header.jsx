@@ -5,12 +5,14 @@ import { FiAlignLeft } from 'react-icons/fi';
 import userLogo from '../../asset/user.svg';
 import Logo from '../../asset/logo (1).png';
 import shopinglogo from '../../asset/shopping.svg';
+
+import menuIcon from '../../asset/menu-02.svg';
 const Header = () => {
   return (
     <header className="bg-[#F5F3FF] container mx-auto max-w-screen-xl">
       <div className="container mx-auto flex justify-between items-center p-4">
         <a href="#" className="lg:hidden text-[25px] mr-3">
-          <FiAlignLeft></FiAlignLeft>
+          <img src={menuIcon.src} alt="menu" />
         </a>
         <a href="#" className="text-2xl font-bold">
           <img
