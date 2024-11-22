@@ -18,30 +18,35 @@ const productData = [
     name: 'Hoodie',
     price: '2,300',
     image: ProductImg2,
+    ratting: [],
   },
   {
     id: 3,
     name: 'Hoodie',
     price: '2,300',
     image: ProductImg3,
+    ratting: [],
   },
   {
     id: 4,
     name: 'Jacket',
     price: '2,300',
     image: ProductImg4,
+    ratting: [],
   },
   {
     id: 5,
     name: 'Jacket',
     price: '2,300',
     image: ProductImg5,
+    ratting: [],
   },
   {
     id: 6,
     name: 'Jacket',
     price: '2,300',
     image: ProductImg6,
+    ratting: [],
   },
 ];
 

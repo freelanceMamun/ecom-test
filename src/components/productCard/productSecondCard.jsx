@@ -2,8 +2,9 @@
 import Link from 'next/link';
 import React from 'react';
 import start from '../../asset/star.svg';
+import start1 from '../../asset/star (1).svg';
 
-const ProductCard = (data) => {
+const ProductSecondCard = (data) => {
   console.log(data);
 
   return (
@@ -18,6 +19,15 @@ const ProductCard = (data) => {
         </Link>
       </div>
 
+      <div className="review pt-4 pl-2">
+        <div className="flex gap-1">
+          <img src={start.src} alt="star" />
+          <img src={start.src} alt="star" />
+          <img src={start.src} alt="star" />
+          <img src={start1.src} alt="star" />
+          <img src={start1.src} alt="star" />
+        </div>
+      </div>
       <div className=" py-4 px-2">
         <div className="flex justify-between items-center">
           <p>{data.data.name}</p>
@@ -35,4 +45,4 @@ const ProductCard = (data) => {
   );
 };
 
-export default ProductCard;
+export default ProductSecondCard;
