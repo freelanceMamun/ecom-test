@@ -21,3 +21,28 @@ body {
 .pacifico-regular {
   font-family: 'Pacifico', cursive;
 }
+
+.swiper-pagination {
+  @apply bottom-0;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.custom-pagination span {
+  width: 22px;
+  height: 8px;
+  border-radius: 12px;
+  background-color: #a898fd;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.custom-pagination span.swiper-pagination-bullet-active {
+  width: 32px;
+  background-color: #7e53d4; /* Active bullet color */
+}

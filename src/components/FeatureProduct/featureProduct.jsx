@@ -29,7 +29,7 @@ const featureProduct = () => {
             clickable: true,
           }}
           navigation={{ nextEl: '.arrow-left', prevEl: '.arrow-right' }}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Navigation]}
           spaceBetween={15}
           slidesPerView={1}
           breakpoints={{

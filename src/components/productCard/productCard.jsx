@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
+
 const ProductCard = (data) => {
   console.log(data);
 
