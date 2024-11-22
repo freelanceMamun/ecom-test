@@ -7,8 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaArrowLeft } from 'react-icons/fa6';
 import { FaArrowRight } from 'react-icons/fa6';
 
-
-
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
@@ -16,7 +14,7 @@ import 'swiper/css/navigation';
 
 const featureProduct = () => {
   return (
-    <div className="container mx-auto max-w-screen-xl my-16 relative">
+    <div className="container mx-auto max-w-screen-xl my-16 mb-0 relative">
       <div className="py-6">
         <h4 className="text-[#7E53D4] text-[19px]">FEATURED PRODUCT</h4>
         <h3 className="text-black font-bold text-[28px]">New Arrivals</h3>
@@ -60,7 +58,7 @@ const featureProduct = () => {
       </div>
 
       {/* Slider end */}
-      <div className="seemore py-7 text-center">
+      <div className="seemore py-6 text-center">
         <button className="bg-[#7E53D4] py-2 px-6 text-white rounded-lg">
           See more
         </button>

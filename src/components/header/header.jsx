@@ -13,7 +13,11 @@ const Header = () => {
           <FiAlignLeft></FiAlignLeft>
         </a>
         <a href="#" className="text-2xl font-bold">
-          <img src={Logo.src} alt="brand-logo" />
+          <img
+            className="w-[140px] md:w-full"
+            src={Logo.src}
+            alt="brand-logo"
+          />
         </a>
 
         <div className="lg:flex items-center flex-1 justify-between hidden ">

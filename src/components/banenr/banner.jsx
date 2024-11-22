@@ -14,16 +14,16 @@ const Banner = () => {
   return (
     <>
       <div
-        className="h-[80vh] bg-no-repeat bg-cover"
+        className="lg:h-[80vh] h-[360px] bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url(${background.src})` }}
       >
         <div className="container h-[100%] flex items-center justify-center mx-auto max-w-screen-xl p-4">
-          <div className="">
+          <div className="mt-16">
             <div className="text-center text-white">
-              <h1 className="text-[48px] font-bold my-5">
+              <h1 className="lg:text-[58px] text-[28px] font-bold md:my-5">
                 Elevate Your Everyday Style
               </h1>
-              <p className="text-[19px] font-normal">
+              <p className="md:text-[19px] text-[16px] font-normal">
                 Discover the Latest Trends in Sustainable Fashion
               </p>
               <div className="button-element my-8">

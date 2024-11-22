@@ -1,7 +1,9 @@
 import { Manrope } from '@next/font/google';
 import './globals.css';
-import 'swiper/css';
+
 import Header from '@/components/header/header';
+
+import Head from 'next/head';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -13,6 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
       <body className={`${manrope.className}`}>
         <Header></Header>
         {children}
