@@ -17,11 +17,13 @@ const ProductSecondCard = (data) => {
             alt={'Sharee'}
           />
         </Link>
-        <div className="offer bg-[#7E53D4] w-11 h-[70px] right-2  rounded-b-full text-center  text-white absolute top-0">
-          <p className="text-[14px] font-bold">
-            up <br></br> to {data.data.offer}
-          </p>
-        </div>
+        {data.data.offer && (
+          <div className="offer bg-[#7E53D4] w-11 h-[70px] right-2  rounded-b-full text-center  text-white absolute top-0">
+            <p className="text-[14px] font-bold">
+              up <br></br> to {data.data.offer}
+            </p>
+          </div>
+        )}
       </div>
       <div className="review pt-4 pl-2">
         <div className="flex gap-1">
