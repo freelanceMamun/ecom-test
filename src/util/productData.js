@@ -27,6 +27,18 @@ const productData = [
     price: '2,300',
     image: ProductImg4,
   },
+  {
+    id: 5,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg4,
+  },
+  {
+    id: 6,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg4,
+  },
 ];
 
 export default productData;
