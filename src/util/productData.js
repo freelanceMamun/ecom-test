@@ -21,7 +21,7 @@ const productData = [
     price: '2,300',
     image: ProductImg2,
     ratting: [1, 3, 2, 4, 5],
-    offer: '40',
+    offer: '40%',
   },
   {
     id: 3,
@@ -49,6 +49,40 @@ const productData = [
   },
   {
     id: 6,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg6,
+    ratting: [],
+    offer: '40%',
+  },
+
+  {
+    id: 7,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg5,
+    ratting: [],
+    offer: '40%',
+  },
+  {
+    id: 8,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg6,
+    ratting: [],
+    offer: '40%',
+  },
+
+  {
+    id: 9,
+    name: 'Jacket',
+    price: '2,300',
+    image: ProductImg5,
+    ratting: [],
+    offer: '40%',
+  },
+  {
+    id: 10,
     name: 'Jacket',
     price: '2,300',
     image: ProductImg6,

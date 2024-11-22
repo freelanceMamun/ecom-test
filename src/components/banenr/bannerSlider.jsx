@@ -21,7 +21,7 @@ const BannerSlider = () => {
           clickable: true,
           el: '.custom-pagination',
         }}
-        navigation={{ nextEl: '.arrow-left', prevEl: '.arrow-right' }}
+        navigation={{ nextEl: '.arrow-left2', prevEl: '.arrow-right2' }}
         className="mySwiper"
         modules={[Pagination, Navigation]}
         slidesPerView={1}
@@ -98,10 +98,10 @@ const BannerSlider = () => {
       </Swiper>
       <div className="custom-pagination mt-20"></div>
       <div className=" hidden absolute lg:top-10 top-8 xl:right-0 right-4  gap-3">
-        <button className="arrow-right arrow border-[#7E53D4] flex items-center justify-center border w-8 h-8 rounded-full">
+        <button className="arrow-right2  border-[#7E53D4] flex items-center justify-center border w-8 h-8 rounded-full">
           <FaArrowLeft fill="#7E53D4" className="text-[#7E53D4]"></FaArrowLeft>
         </button>
-        <button className="arrow-left  rounded-full flex items-center justify-center arrow border-[#7E53D4] border w-8 h-8">
+        <button className="arrow-left2  rounded-full flex items-center justify-center  border-[#7E53D4] border w-8 h-8">
           <FaArrowRight
             fill="#7E53D4"
             className="text-[#7E53D4]"

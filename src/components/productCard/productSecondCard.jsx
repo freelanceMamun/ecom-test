@@ -5,10 +5,8 @@ import start from '../../asset/star.svg';
 import start1 from '../../asset/star (1).svg';
 
 const ProductSecondCard = (data) => {
-  console.log(data);
-
   return (
-    <div className="bg-white p-2 rounded-2xl">
+    <div className="bg-white p-2 rounded-2xl lg:w-[300px] mb-5">
       <div className="bg-[#F6F5FD] rounded-lg  relative">
         <Link href={`/product/${data.data.id}`}>
           <img
@@ -25,15 +23,18 @@ const ProductSecondCard = (data) => {
           </div>
         )}
       </div>
-      <div className="review pt-4 pl-2">
-        <div className="flex gap-1">
-          <img src={start.src} alt="star" />
-          <img src={start.src} alt="star" />
-          <img src={start.src} alt="star" />
-          <img src={start1.src} alt="star" />
-          <img src={start1.src} alt="star" />
+      {data.data.ratting && (
+        <div className="review pt-4 pl-2">
+          <div className="flex gap-1">
+            <img src={start.src} alt="star" />
+            <img src={start.src} alt="star" />
+            <img src={start.src} alt="star" />
+            <img src={start1.src} alt="star" />
+            <img src={start1.src} alt="star" />
+          </div>
         </div>
-      </div>
+      )}
+
       <div className=" py-4 px-2">
         <div className="flex justify-between items-center">
           <p>{data.data.name}</p>
