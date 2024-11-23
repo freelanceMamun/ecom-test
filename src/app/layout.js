@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/header/header';
 
 import Head from 'next/head';
+import Footer from '@/components/footer/footer';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.className}`}>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
