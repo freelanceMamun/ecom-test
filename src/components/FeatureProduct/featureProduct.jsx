@@ -12,12 +12,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const featureProduct = () => {
+const featureProduct = ({ title, subtitle }) => {
   return (
     <div className="container mx-auto max-w-screen-xl my-16 mb-0 relative px-5 md:px-4 xl:px-0">
       <div className="py-6">
-        <h4 className="text-[#7E53D4] text-[19px]">FEATURED PRODUCT</h4>
-        <h3 className="text-black font-bold text-[28px]">New Arrivals</h3>
+        <h4 className="text-[#7E53D4] text-[19px]">{title && title}</h4>
+        <h3 className="text-black font-bold text-[28px]">
+          {subtitle ? subtitle : 'New Arrivals'}
+        </h3>
       </div>
       {/* Slider */}
       <div>

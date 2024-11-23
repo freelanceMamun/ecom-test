@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
-
 import staricon from '@/asset/star1.svg';
 import staricon1 from '@/asset/star-w.svg';
+
+import FeatureProduct from '@/components/FeatureProduct/featureProduct';
 
 const DetailProduct = () => {
   return (
@@ -15,7 +16,7 @@ const DetailProduct = () => {
             New Arrival
           </a>
         </div>
-        {/* nav Breadcum */}
+        {/* nav Breadcum end */}
         <div className="grid grid-cols-2">
           <div className=""></div>
           <div className="">
@@ -90,6 +91,8 @@ const DetailProduct = () => {
             </div>
           </div>
         </div>
+        {/* Related Products */}
+        <FeatureProduct subtitle={'Related Products'}></FeatureProduct>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Banner></Banner>
       {/* == Featured product == */}
-      <FeatureProduct></FeatureProduct>
+      <FeatureProduct title={'FEATURED PRODUCT'}></FeatureProduct>
       <SecondBanner></SecondBanner>
       <BannerSlider></BannerSlider>
       <FeatureDeal></FeatureDeal>
