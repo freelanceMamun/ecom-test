@@ -7,14 +7,14 @@ import twitter from '../../asset/Twitter.png';
 const Footer = () => {
   return (
     <footer className="">
-      <div className="bg-black py-10">
+      <div className="bg-black md:py-10 pt-6">
         <div className="container mx-auto max-w-screen-xl  p-4">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <div className="max-w-md">
               <div>
                 <a href="/">
                   <img
-                    className="w-full md:w-[195px]"
+                    className="w-[150px] md:w-[195px]"
                     src={Logo.src}
                     alt="Brand Logo"
                   />
@@ -44,7 +44,7 @@ const Footer = () => {
                   <div className="flex w-full">
                     <input
                       type="text"
-                      className="bg-white w-full px-4  rounded-l-md py-3 placeholder:text-black"
+                      className="bg-white w-full px-4 outline-none rounded-l-md py-3 placeholder:text-black"
                       placeholder="Your email address"
                     />
                     <button className="bg-[#7E53D4] rounded-r-md text-white px-10">
@@ -55,9 +55,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 justify-between py-7">
-            <div className="text-white">
-              <p className="pb-2">
+          <div className="grid md:grid-cols-4  justify-between py-7">
+            <div className="text-white py-2 md:py-0 ">
+              <p className="md:pb-2">
                 <a href="#" className="text-[16px] font-medium">
                   Contact Us
                 </a>
@@ -66,24 +66,24 @@ const Footer = () => {
                 <a href="#">support@we5ive.com</a>
               </p>
             </div>
-            <div className="text-white">
-              <p className="pb-2">
+            <div className="text-white py-2 md:py-0 ">
+              <p className="md:pb-2">
                 <a href="#">About Us</a>
               </p>
               <p>
                 <a href="#">Contact Us</a>
               </p>
             </div>
-            <div className="text-white">
-              <p className="pb-2">
+            <div className="text-white py-2 md:py-0 ">
+              <p className="md:pb-2">
                 <a href="#">Privacy policy</a>
               </p>
               <p>
                 <a href="#">Terms & Condition</a>
               </p>
             </div>
-            <div className="text-white ">
-              <p className="pb-2">
+            <div className="text-white py-2 md:py-0 ">
+              <p className="md:pb-2">
                 <a href="#">Social Link</a>
               </p>
               <div className="flex gap-4 mt-4">
