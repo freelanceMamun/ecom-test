@@ -64,6 +64,30 @@ const DetailProduct = () => {
                 </h5>
               </div>
             </div>
+
+            <div className="py-6">
+              <h5 className="text-[19px] font-medium pb-4">Quantity</h5>
+              <div className="bg-[#ECE9FE] flex items-center justify-between rounded-full w-[150px]">
+                <button className="py-2 text-3xl px-4">-</button>
+                <p className="text-lg">1</p>
+                <button className="py-2 text-3xl px-4">+</button>
+              </div>
+            </div>
+
+            {/* add to card */}
+            <div className="grid grid-cols-2 gap-3 py-4">
+              <div>
+                <button className="bg-[#7E53D4] text-white py-2 w-full rounded-lg">
+                  Buy Now
+                </button>
+              </div>
+              <div>
+                <button className="text-[#7E53D4] border w-full py-2 rounded-lg border-[#7E53D4]">
+                  {' '}
+                  add to cart
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
