@@ -1,5 +1,9 @@
 import React from 'react';
 import Logo from '../../asset/logo (3).png';
+import facebookIcon from '../../asset/Facebook.png';
+import Linkdin from '../../asset/Linkedin.png';
+import twitter from '../../asset/Twitter.png';
+
 const Footer = () => {
   return (
     <footer className="">
@@ -51,17 +55,19 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 justify-between">
+          <div className="grid grid-cols-4 justify-between py-7">
             <div className="text-white">
-              <p>
-                <a href="#">Contact Us</a>
+              <p className="pb-2">
+                <a href="#" className="text-[16px] font-medium">
+                  Contact Us
+                </a>
               </p>
               <p>
                 <a href="#">support@we5ive.com</a>
               </p>
             </div>
             <div className="text-white">
-              <p>
+              <p className="pb-2">
                 <a href="#">About Us</a>
               </p>
               <p>
@@ -69,12 +75,28 @@ const Footer = () => {
               </p>
             </div>
             <div className="text-white">
-              <p>
+              <p className="pb-2">
                 <a href="#">Privacy policy</a>
               </p>
               <p>
                 <a href="#">Terms & Condition</a>
               </p>
+            </div>
+            <div className="text-white ">
+              <p className="pb-2">
+                <a href="#">Social Link</a>
+              </p>
+              <div className="flex gap-4 mt-4">
+                <a href="#">
+                  <img className="w-6" src={facebookIcon.src} alt="facebook" />
+                </a>
+                <a href="#">
+                  <img className="w-6" src={twitter.src} alt="x-com" />
+                </a>
+                <a href="#">
+                  <img className="w-6" src={Linkdin.src} alt="linkedin" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
