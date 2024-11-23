@@ -4,6 +4,7 @@ import staricon from '@/asset/star1.svg';
 import staricon1 from '@/asset/star-w.svg';
 
 import FeatureProduct from '@/components/FeatureProduct/featureProduct';
+import Dropdown from '@/components/dropdown/dropdown';
 
 const DetailProduct = () => {
   return (
@@ -91,6 +92,99 @@ const DetailProduct = () => {
             </div>
           </div>
         </div>
+
+        {/* == Product Details Review  content == */}
+        <div className="">
+          <div className="text-sm font-medium text-center text-gray-500  dark:text-gray-400 dark:border-gray-700">
+            <ul className="flex flex-wrap gap-4 ">
+              <li className="me-2">
+                <a href="#" className="inline-block p-4  rounded-t-lg  ">
+                  Details
+                </a>
+              </li>
+              <li className="me-2">
+                <a
+                  href="#"
+                  className="inline-block p-4 rounded-t-lg active "
+                  aria-current="page"
+                >
+                  Review & Rating
+                </a>
+              </li>
+              <li className="me-2">
+                <a
+                  href="#"
+                  className="inline-block p-4 rounded-t-lg  "
+                  aria-current="page"
+                >
+                  Discussion
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="review py-6">
+            <div className="grid grid-cols-3">
+              <div className="col-span-2">
+                <Dropdown />
+              </div>
+              <div className="">
+                <div className="flex gap-2">
+                  <p className="text-black font-semibold">Product Review</p>
+                  <p className="text-[#7E53D4] font-semibold">121 reviews</p>
+                </div>
+                <div className="rattingstar  flex justify-between py-4">
+                  <div className="flex gap-1">
+                    <img src={staricon.src} alt="star" />
+                    <img src={staricon.src} alt="star" />
+                    <img src={staricon.src} alt="star" />
+                    <img src={staricon.src} alt="star" />
+                    <img src={staricon1.src} alt="star" />
+                  </div>
+                  <div className="font-semibold">(4.0)</div>
+                </div>
+                <div className="py-5">
+                  <div className="flex items-center gap-2 pb-3">
+                    <div>5</div>
+                    <div className="w-full bg-[#DFDFDF] rounded-full h-2.5 dark:bg-gray-700">
+                      <div className="bg-[#FFCF11] h-2.5 rounded-full w-[45%]"></div>{' '}
+                    </div>
+                    <div>50</div>
+                  </div>
+                  <div className="flex items-center gap-2 pb-3">
+                    <div>4</div>
+                    <div className="w-full bg-[#DFDFDF] rounded-full h-2.5 dark:bg-gray-700">
+                      <div className="bg-[#FFCF11] h-2.5 rounded-full w-[45%]"></div>{' '}
+                    </div>
+                    <div>5</div>
+                  </div>
+
+                  <div className="flex items-center gap-2 pb-3">
+                    <div>3</div>
+                    <div className="w-full bg-[#DFDFDF] rounded-full h-2.5 dark:bg-gray-700">
+                      <div className="bg-[#FFCF11] h-2.5 rounded-full w-[45%]"></div>{' '}
+                    </div>
+                    <div>10</div>
+                  </div>
+                  <div className="flex items-center gap-2 pb-3">
+                    <div>2</div>
+                    <div className="w-full bg-[#DFDFDF] rounded-full h-2.5 dark:bg-gray-700">
+                      <div className="bg-[#FFCF11] h-2.5 rounded-full w-[45%]"></div>{' '}
+                    </div>
+                    <div>30</div>
+                  </div>
+                  <div className="flex items-center gap-2 pb-3">
+                    <div>1</div>
+                    <div className="w-full bg-[#DFDFDF] rounded-full h-2.5 dark:bg-gray-700">
+                      <div className="bg-[#FFCF11] h-2.5 rounded-full w-[45%]"></div>{' '}
+                    </div>
+                    <div>2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Related Products */}
         <FeatureProduct subtitle={'Related Products'}></FeatureProduct>
       </div>
