@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="bg-black py-10">
-        <div className="container mx-auto max-w-screen-xl flex justify-between items-center p-4">
+        <div className="container mx-auto max-w-screen-xl  p-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="max-w-md">
               <div>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div>
               <div>
-                <h4 className="text-white text-[23px]">
+                <h4 className="text-white text-[23px] mb-2">
                   Sign Up For Our Newsletter!
                 </h4>
                 <p className="text-white text-[16px]">
@@ -35,6 +35,46 @@ const Footer = () => {
                   access to new Podcast episodes.
                 </p>
               </div>
+              <div className="subscribe py-10">
+                <form action="w-full">
+                  <div className="flex w-full">
+                    <input
+                      type="text"
+                      className="bg-white w-full px-4  rounded-l-md py-3 placeholder:text-black"
+                      placeholder="Your email address"
+                    />
+                    <button className="bg-[#7E53D4] rounded-r-md text-white px-10">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 justify-between">
+            <div className="text-white">
+              <p>
+                <a href="#">Contact Us</a>
+              </p>
+              <p>
+                <a href="#">support@we5ive.com</a>
+              </p>
+            </div>
+            <div className="text-white">
+              <p>
+                <a href="#">About Us</a>
+              </p>
+              <p>
+                <a href="#">Contact Us</a>
+              </p>
+            </div>
+            <div className="text-white">
+              <p>
+                <a href="#">Privacy policy</a>
+              </p>
+              <p>
+                <a href="#">Terms & Condition</a>
+              </p>
             </div>
           </div>
         </div>
