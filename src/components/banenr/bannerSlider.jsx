@@ -37,7 +37,7 @@ const BannerSlider = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-[52px] font-medium">MEN COLLECTION</h4>
-                <div className=" pt-5 flex items-center justify-center md:justify-start">
+                <div className="button-element pt-5 flex items-center justify-center md:justify-start">
                   <a
                     href="#"
                     className="bg-[#8F71E1] text-white text-[19px]  py-3 px-8 font-normal rounded-full"
@@ -60,7 +60,7 @@ const BannerSlider = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-[52px] font-medium">MEN COLLECTION</h4>
-                <div className=" pt-5 flex items-center justify-center md:justify-start">
+                <div className=" button-element pt-5 flex items-center justify-center md:justify-start">
                   <a
                     href="#"
                     className="bg-[#8F71E1] text-white text-[19px]  py-3 px-8 font-normal rounded-full"
@@ -83,7 +83,7 @@ const BannerSlider = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-[52px] font-medium">MEN COLLECTION</h4>
-                <div className=" pt-5 flex items-center justify-center md:justify-start">
+                <div className=" button-element pt-5 flex items-center justify-center md:justify-start">
                   <a
                     href="#"
                     className="bg-[#8F71E1] text-white text-[19px]  py-3 px-8 font-normal rounded-full"
@@ -150,7 +150,7 @@ const BannerSlider = () => {
           <h4 className="md:text-[52px] text-[23px] font-medium">
             WOMAN COLLECTION
           </h4>
-          <div className=" pt-5 flex items-center justify-start md:justify-start">
+          <div className=" button-element pt-5 flex items-center justify-start md:justify-start">
             <a
               href="#"
               className="bg-[#8F71E1] text-white text-[19px]  py-3 px-8 font-normal rounded-full"

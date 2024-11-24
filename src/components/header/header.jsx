@@ -32,19 +32,19 @@ const Header = () => {
               </a>
               <a
                 href="#about"
-                className="hover:text-blue-400 text-[#646464] font-semibold text-[16px]"
+                className="hover:text-[#581FC1] text-[#646464] font-semibold text-[16px]"
               >
                 Shop
               </a>
               <a
                 href="#services"
-                className="hover:text-blue-400 text-[#646464] font-semibold text-[16px]"
+                className="hover:text-[#581FC1] text-[#646464] font-semibold text-[16px]"
               >
                 Deals
               </a>
               <a
                 href="#contact"
-                className="hover:text-blue-400 text-[#646464] font-semibold text-[16px]"
+                className="hover:text-[#581FC1] text-[#646464] font-semibold text-[16px]"
               >
                 What's New
               </a>

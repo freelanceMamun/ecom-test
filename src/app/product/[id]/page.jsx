@@ -122,7 +122,7 @@ const DetailProduct = () => {
                 </button>
               </div>
               <div>
-                <button className="text-[#7E53D4] border w-full py-2 rounded-lg border-[#7E53D4]">
+                <button className="text-[#7E53D4] hover:bg-[#7E53D4] hover:text-white border w-full py-2 rounded-lg border-[#7E53D4]">
                   {' '}
                   add to cart
                 </button>

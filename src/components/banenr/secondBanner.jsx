@@ -17,7 +17,7 @@ const SecondBanner = () => {
             <span className="text-[#6F42C1]">30%</span> Off for New Customers
           </h3>
 
-          <div className=" pt-5 flex items-center justify-center md:justify-start">
+          <div className=" button-element pt-5 flex items-center justify-center md:justify-start">
             <a
               href="#"
               className="bg-[#8F71E1] text-white text-[19px]  py-3 px-8 font-normal rounded-full"

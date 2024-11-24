@@ -27,7 +27,7 @@ const ProductCard = (data) => {
         </div>
       </div>
       <div className="addtocard pb-2">
-        <button className="w-full py-2 rounded-lg font-semibold text-[16px] text-[#7E53D4] border border-[#7E53D4]">
+        <button className="w-full py-2 hover:bg-[#7E53D4] hover:text-white rounded-lg font-semibold text-[16px] text-[#7E53D4] border border-[#7E53D4]">
           Add to Cart
         </button>
       </div>

@@ -115,3 +115,19 @@ body {
 .featureproduct .swiper-pagination {
   display: none;
 }
+
+.button-element:hover a {
+  background: #5c36a1;
+  transition: all 0.6s ease;
+}
+
+.button-element:hover span {
+  background: #5c36a1;
+  transition: all 0.6s ease;
+}
+.button-element:hover span svg {
+  transition: all 0.1s ease;
+}
+.button-element:hover span svg {
+  transform: rotate(80deg);
+}
