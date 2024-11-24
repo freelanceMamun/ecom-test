@@ -5,7 +5,8 @@ import staricon1 from '@/asset/star-w.svg';
 
 import FeatureProduct from '@/components/FeatureProduct/featureProduct';
 import Dropdown from '@/components/dropdown/dropdown';
-
+import thums from '@/asset/thumbs-up.svg';
+import reviewimg from '@/asset/Frame 97.png';
 const DetailProduct = () => {
   return (
     <div className="mx-auto max-w-screen-xl p-4">
@@ -94,18 +95,21 @@ const DetailProduct = () => {
         </div>
 
         {/* == Product Details Review  content == */}
-        <div className="">
+        <div className="my-12">
           <div className="text-sm font-medium text-center text-gray-500  dark:text-gray-400 dark:border-gray-700">
-            <ul className="flex flex-wrap gap-4 ">
+            <ul className="flex flex-wrap gap-16 ">
               <li className="me-2">
-                <a href="#" className="inline-block p-4  rounded-t-lg  ">
+                <a
+                  href="#"
+                  className="inline-block text-[#747474] text-[19px]  rounded-t-lg  "
+                >
                   Details
                 </a>
               </li>
               <li className="me-2">
                 <a
                   href="#"
-                  className="inline-block p-4 rounded-t-lg active "
+                  className="inline-block text-[#7E53D4] font-medium text-[19px]  rounded-t-lg active "
                   aria-current="page"
                 >
                   Review & Rating
@@ -114,7 +118,7 @@ const DetailProduct = () => {
               <li className="me-2">
                 <a
                   href="#"
-                  className="inline-block p-4 rounded-t-lg  "
+                  className="inline-block text-[#747474] text-[19px]  rounded-t-lg  "
                   aria-current="page"
                 >
                   Discussion
@@ -122,10 +126,102 @@ const DetailProduct = () => {
               </li>
             </ul>
           </div>
-          <div className="review py-6">
+          <div className="review py-10">
             <div className="grid grid-cols-3">
               <div className="col-span-2">
                 <Dropdown />
+                <div className="my-5">
+                  {/* ==== Review customer element  */}
+                  <div className="py-4">
+                    <div className="flex gap-3">
+                      <img
+                        src={reviewimg.src}
+                        className="w-10 h-10 rounded-full"
+                        alt=""
+                      />
+                      <div>
+                        <h4 className="text-black mb-1 text-[16px] font-semibold ">
+                          Cameron Williamson{' '}
+                          <span className="text-[#656565] font-light text-[12px] ml-2">
+                            3days
+                          </span>
+                        </h4>
+                        <div className="flex gap-1 pt-1 ">
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon1.src} alt="star" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="py-6">
+                      <p className="text-black font-semibold">Very Nice!!</p>
+                      <p className="flex  gap-1 items-center pt-3">
+                        <a href="#">
+                          <img src={thums.src} alt="" />
+                        </a>
+                        10
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="py-4">
+                    <div className="flex gap-3">
+                      <img
+                        src={reviewimg.src}
+                        className="w-10 h-10 rounded-full"
+                        alt=""
+                      />
+                      <div>
+                        <h4 className="text-black mb-1 text-[16px] font-semibold ">
+                          Cameron Williamson{' '}
+                          <span className="text-[#656565] font-light text-[12px] ml-2">
+                            3days
+                          </span>
+                        </h4>
+                        <div className="flex gap-1 pt-1 ">
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon.src} alt="star" />
+                          </a>
+                          <a href="#">
+                            <img src={staricon1.src} alt="star" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="py-6">
+                      <p className="text-black font-semibold">Very Nice!!</p>
+                      <p className="flex  gap-1 items-center pt-3">
+                        <a href="#">
+                          <img src={thums.src} alt="" />
+                        </a>
+                        10
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* ==== Review customer element  */}
+                </div>
               </div>
               <div className="">
                 <div className="flex gap-2">
