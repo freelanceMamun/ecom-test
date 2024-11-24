@@ -1,7 +1,6 @@
-import { HiOutlineUser } from 'react-icons/hi2';
-import { FiShoppingCart } from 'react-icons/fi';
 import { FiSearch } from 'react-icons/fi';
-import { FiAlignLeft } from 'react-icons/fi';
+import Search from '@/asset/search-01.svg';
+
 import userLogo from '../../asset/user.svg';
 import Logo from '../../asset/logo (1).png';
 import shopinglogo from '../../asset/shopping.svg';
@@ -51,11 +50,12 @@ const Header = () => {
               </a>
             </nav>
 
-            <div className="mx-4">
+            <div className="mx-4 px-4 py-2 bg-white rounded-full text-gray-800 flex gap-3">
+              <img src={Search.src} alt="" />
               <input
                 type="text"
-                placeholder="Search products..."
-                className="px-4 py-2 bg-white rounded-full text-gray-800  focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Search"
+                className="focus:outline-none placeholder:text-gray-800"
               />
             </div>
           </div>

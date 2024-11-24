@@ -2,7 +2,7 @@ import React from 'react';
 import ShopingBag from '@/asset/shopping-basket-01.svg';
 const BagBatch = () => {
   return (
-    <div className="fixed right-0 top-72 hidden md:block">
+    <div className="fixed right-0 top-72 hidden lg:block">
       <div className="bg-[#581FC1] rounded-l-xl text-white p-4 px-6 text-center">
         <img src={ShopingBag.src} alt="" className="m-auto pb-2" />
         <p>your bag</p>

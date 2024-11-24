@@ -26,13 +26,13 @@ const DetailProduct = () => {
         </div>
 
         {/* Responsive Slider */}
-        <div className="sm:hidden">
+        <div className="lg:hidden  block">
           <Responsiveslider></Responsiveslider>
         </div>
         {/* nav Breadcum end */}
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Prduct Switcher  Gallary */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <SliderSingleProducts></SliderSingleProducts>
           </div>
           {/* Prduct Details Content  */}

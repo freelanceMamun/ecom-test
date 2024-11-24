@@ -18,7 +18,7 @@ import 'swiper/css/navigation';
 
 const FeatureDeal = () => {
   return (
-    <div className="container mx-auto max-w-screen-xl relative my-16 px-5 md:px-4 xl:px-0">
+    <div className="featureproduct container mx-auto max-w-screen-xl relative my-16 px-5 md:px-4 xl:px-0">
       <div className="py-6">
         <h4 className="text-[#7E53D4] text-[19px]">SUMMER</h4>
         <h3 className="text-black font-bold text-[28px]">Big Deal</h3>

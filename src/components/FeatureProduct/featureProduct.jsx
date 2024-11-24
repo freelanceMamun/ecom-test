@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 const featureProduct = ({ title, subtitle, newstyle }) => {
   return (
     <div
-      className={`container mx-auto max-w-screen-xl my-16 mb-0 relative px-5 md:px-4 xl:px-0 ${newstyle}`}
+      className={`featureproduct container mx-auto max-w-screen-xl my-16 mb-0 relative px-5 md:px-4 xl:px-0 ${newstyle}`}
     >
       <div className="py-6">
         <h4 className="text-[#7E53D4] text-[19px]">{title && title}</h4>
