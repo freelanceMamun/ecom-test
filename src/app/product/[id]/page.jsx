@@ -10,10 +10,11 @@ import reviewimg from '@/asset/Frame 97.png';
 
 import SliderSingleProducts from '@/components/singleprductslider/singleproductSlider';
 import Quantity from '@/components/Quantity/Quantity';
+import BagBatch from '@/components/bag/bagBatch';
 
 const DetailProduct = () => {
   return (
-    <div className="mx-auto max-w-screen-xl p-4">
+    <div className="mx-auto max-w-screen-xl p-4 relative">
       <div className="">
         {/* nav Breadcum */}
         <div className=" py-4">
@@ -57,7 +58,9 @@ const DetailProduct = () => {
             </div>
             <div className="grid grid-cols-2 py-8">
               <div>
-                <h5 className="text-[19px] font-medium pb-3">Available Size</h5>
+                <h5 className="text-[19px] font-semibold pb-3">
+                  Available Size
+                </h5>
                 <div className="flex gap-2">
                   <button className=" py-2 px-4 border rounded-md border-[#7E53D4]">
                     S
@@ -68,7 +71,7 @@ const DetailProduct = () => {
                 </div>
               </div>
               <div>
-                <h5 className="text-[19px] font-medium pb-3">
+                <h5 className="text-[19px] font-semibold pb-3">
                   Available Color
                 </h5>
 
@@ -309,6 +312,7 @@ const DetailProduct = () => {
         {/* Related Products */}
         <FeatureProduct subtitle={'Related Products'}></FeatureProduct>
       </div>
+      <BagBatch />
     </div>
   );
 };
