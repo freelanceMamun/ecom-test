@@ -9,6 +9,7 @@ import thums from '@/asset/thumbs-up.svg';
 import reviewimg from '@/asset/Frame 97.png';
 
 import SliderSingleProducts from '@/components/singleprductslider/singleproductSlider';
+import Quantity from '@/components/Quantity/Quantity';
 
 const DetailProduct = () => {
   return (
@@ -30,7 +31,6 @@ const DetailProduct = () => {
           <div className="">
             <div className="pb-3">
               <button className="bg-[#2F1C59] rounded-lg px-14 py-3 text-white">
-                {' '}
                 New Arrival
               </button>
             </div>
@@ -71,17 +71,36 @@ const DetailProduct = () => {
                 <h5 className="text-[19px] font-medium pb-3">
                   Available Color
                 </h5>
-              </div>
-            </div>
 
-            <div className="py-6">
-              <h5 className="text-[19px] font-medium pb-4">Quantity</h5>
-              <div className="bg-[#ECE9FE] flex items-center justify-between rounded-full w-[150px]">
-                <button className="py-2 text-3xl px-4">-</button>
-                <p className="text-lg">1</p>
-                <button className="py-2 text-3xl px-4">+</button>
+                {/* Color Radio button  */}
+                <div className="flex gap-10">
+                  <div className="flex gap-5">
+                    <input
+                      type="radio"
+                      id="White"
+                      name="fav_color"
+                      value="White"
+                    />
+                    <label htmlFor="White" className="">
+                      <span className="ml-2">Off White</span>
+                    </label>
+                  </div>
+                  <div className="flex gap-5">
+                    <input
+                      type="radio"
+                      id="black"
+                      name="fav_color"
+                      value="black"
+                    />
+                    <label htmlFor="black">
+                      <span className="ml-2">Black</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
+            {/* Quantity */}
+            <Quantity />
 
             {/* add to card */}
             <div className="grid grid-cols-2 gap-3 py-4">
