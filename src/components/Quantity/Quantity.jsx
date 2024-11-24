@@ -14,7 +14,7 @@ const Quantity = () => {
   };
   return (
     <div>
-      <div className="py-6">
+      <div className="">
         <h5 className="text-[19px] font-medium pb-4">Quantity</h5>
         <div className="bg-[#ECE9FE] flex items-center justify-between rounded-full w-[150px]">
           <button onClick={decrement} className="py-2 text-3xl px-4">

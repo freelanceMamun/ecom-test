@@ -56,9 +56,10 @@ const DetailProduct = () => {
                 <h3 className="text-[28px] font-bold">BDT 2500</h3>
               </div>
             </div>
-            <div className="grid grid-cols-2 py-8">
+            <div className="h-[1px] w-full bg-[#eeeded] my-10"></div>
+            <div className="grid grid-cols-2">
               <div>
-                <h5 className="text-[19px] font-semibold pb-3">
+                <h5 className="text-[19px] font-semibold pb-4">
                   Available Size
                 </h5>
                 <div className="flex gap-2">
@@ -71,7 +72,7 @@ const DetailProduct = () => {
                 </div>
               </div>
               <div>
-                <h5 className="text-[19px] font-semibold pb-3">
+                <h5 className="text-[19px] font-semibold pb-4">
                   Available Color
                 </h5>
 
@@ -102,6 +103,7 @@ const DetailProduct = () => {
                 </div>
               </div>
             </div>
+            <div className="h-[1px] w-full bg-[#eeeded] my-10"></div>
             {/* Quantity */}
             <Quantity />
 
