@@ -7,6 +7,9 @@ import FeatureProduct from '@/components/FeatureProduct/featureProduct';
 import Dropdown from '@/components/dropdown/dropdown';
 import thums from '@/asset/thumbs-up.svg';
 import reviewimg from '@/asset/Frame 97.png';
+
+import SliderSingleProducts from '@/components/singleprductslider/singleproductSlider';
+
 const DetailProduct = () => {
   return (
     <div className="mx-auto max-w-screen-xl p-4">
@@ -19,8 +22,11 @@ const DetailProduct = () => {
           </a>
         </div>
         {/* nav Breadcum end */}
-        <div className="grid grid-cols-2">
-          <div className=""></div>
+        <div className="grid grid-cols-2 gap-10">
+          {/* Prduct Switcher  Gallary */}
+          <div className="">
+            <SliderSingleProducts></SliderSingleProducts>
+          </div>
           <div className="">
             <div className="pb-3">
               <button className="bg-[#2F1C59] rounded-lg px-14 py-3 text-white">
