@@ -11,25 +11,32 @@ import reviewimg from '@/asset/Frame 97.png';
 import SliderSingleProducts from '@/components/singleprductslider/singleproductSlider';
 import Quantity from '@/components/Quantity/Quantity';
 import BagBatch from '@/components/bag/bagBatch';
+import Responsiveslider from '@/components/singleprductslider/responsiveslider';
 
 const DetailProduct = () => {
   return (
     <div className="mx-auto max-w-screen-xl p-4 relative">
       <div className="">
         {/* nav Breadcum */}
-        <div className=" py-4">
+        <div className="py-4">
           <a href="#">Feature Product / </a>
           <a href="#" className="text-[#7E53D4] font-medium">
             New Arrival
           </a>
         </div>
+
+        {/* Responsive Slider */}
+        <div className="sm:hidden">
+          <Responsiveslider></Responsiveslider>
+        </div>
         {/* nav Breadcum end */}
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-10">
           {/* Prduct Switcher  Gallary */}
-          <div className="">
+          <div className="hidden md:block">
             <SliderSingleProducts></SliderSingleProducts>
           </div>
-          <div className="">
+          {/* Prduct Details Content  */}
+          <div className="mt-6 md:mt-0">
             <div className="pb-3">
               <button className="bg-[#2F1C59] rounded-lg px-14 py-3 text-white">
                 New Arrival
@@ -56,7 +63,7 @@ const DetailProduct = () => {
                 <h3 className="text-[28px] font-bold">BDT 2500</h3>
               </div>
             </div>
-            <div className="h-[1px] w-full bg-[#eeeded] my-10"></div>
+            <div className="h-[1px] w-full bg-[#eeeded] md:my-10 my-6 "></div>
             <div className="grid grid-cols-2">
               <div>
                 <h5 className="text-[19px] font-semibold pb-4">
@@ -71,7 +78,7 @@ const DetailProduct = () => {
                   <button className=" py-2 px-4 rounded-md">XL</button>
                 </div>
               </div>
-              <div>
+              <div className=" hidden md:block">
                 <h5 className="text-[19px] font-semibold pb-4">
                   Available Color
                 </h5>
@@ -103,12 +110,12 @@ const DetailProduct = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[1px] w-full bg-[#eeeded] my-10"></div>
+            <div className="h-[1px] w-full bg-[#eeeded] md:my-10 my-6 "></div>
             {/* Quantity */}
             <Quantity />
 
             {/* add to card */}
-            <div className="grid grid-cols-2 gap-3 py-4">
+            <div className="grid md:grid-cols-2 gap-3 py-4">
               <div>
                 <button className="bg-[#7E53D4] text-white py-2 w-full rounded-lg">
                   Buy Now
@@ -122,12 +129,13 @@ const DetailProduct = () => {
               </div>
             </div>
           </div>
+          {/* Prduct Details Content  */}
         </div>
 
         {/* == Product Details Review  content == */}
-        <div className="my-12">
+        <div className="md:my-12 mt-6">
           <div className="text-sm font-medium text-center text-gray-500  dark:text-gray-400 dark:border-gray-700">
-            <ul className="flex flex-wrap gap-16 ">
+            <ul className="flex flex-wrap md:gap-16 gap-4  ">
               <li className="me-2">
                 <a
                   href="#"
@@ -156,9 +164,9 @@ const DetailProduct = () => {
               </li>
             </ul>
           </div>
-          <div className="review py-10">
-            <div className="grid grid-cols-3">
-              <div className="col-span-2">
+          <div className="review md:py-10 pt-6">
+            <div className="grid md:grid-cols-3">
+              <div className="md:col-span-2  order-2">
                 <Dropdown />
                 <div className="my-5">
                   {/* ==== Review customer element  */}
@@ -253,7 +261,7 @@ const DetailProduct = () => {
                   {/* ==== Review customer element  */}
                 </div>
               </div>
-              <div className="">
+              <div className="md:order-2">
                 <div className="flex gap-2">
                   <p className="text-black font-semibold">Product Review</p>
                   <p className="text-[#7E53D4] font-semibold">121 reviews</p>
@@ -312,7 +320,10 @@ const DetailProduct = () => {
         </div>
 
         {/* Related Products */}
-        <FeatureProduct subtitle={'Related Products'}></FeatureProduct>
+        <FeatureProduct
+          newstyle={'pt-0 mt-0 px-0 pb-32'}
+          subtitle={'Related Products'}
+        ></FeatureProduct>
       </div>
       <BagBatch />
     </div>

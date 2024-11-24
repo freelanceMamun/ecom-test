@@ -12,6 +12,9 @@ import img from '@/asset/image 9 (1).png';
 import img1 from '@/asset/03.png';
 import img2 from '@/asset/02.png';
 import img3 from '@/asset/4.png';
+
+import ArroRight from '@/asset/arroright.png';
+import Arrowleft from '@/asset/Frame 52.png';
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { FaArrowLeft } from 'react-icons/fa6';
@@ -20,7 +23,7 @@ export default function SliderSingleProducts() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="relative">
+    <div className="relative w-[100%]">
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -84,6 +87,7 @@ export default function SliderSingleProducts() {
           </div>
         </SwiperSlide>
       </Swiper>
+      {/*  */}
       <Swiper
         onSwiper={setThumbsSwiper}
         loop={true}
@@ -92,7 +96,7 @@ export default function SliderSingleProducts() {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper mt-3"
+        className="mySwiper mt-3 "
       >
         <SwiperSlide>
           <div className="bg-[#ECE9FE] rounded-2xl">
@@ -147,14 +151,11 @@ export default function SliderSingleProducts() {
       </Swiper>
 
       <div className=" absolute w-full justify-between z-[1] lg:top-60 top-8 xl:right-0 right-4 flex gap-3">
-        <button className="sarrow-right arrow border-[#7E53D4] flex items-center justify-center border w-8 h-8 rounded-full">
-          <FaArrowLeft fill="#7E53D4" className="text-[#7E53D4]"></FaArrowLeft>
+        <button className="sarrow-right  ">
+          <img src={Arrowleft.src} alt="" className="w-9" />
         </button>
-        <button className="sarrow-left  rounded-full flex items-center justify-center arrow border-[#7E53D4] border w-8 h-8">
-          <FaArrowRight
-            fill="#7E53D4"
-            className="text-[#7E53D4]"
-          ></FaArrowRight>
+        <button className="sarrow-left  ">
+          <img src={ArroRight.src} className="w-9" alt="" />
         </button>
       </div>
     </div>
