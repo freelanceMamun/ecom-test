@@ -14,7 +14,7 @@ const Header = () => {
           <a href="#" className="lg:hidden text-[25px] mr-3">
             <img src={menuIcon.src} alt="menu" />
           </a>
-          <a href="#" className="text-2xl font-bold">
+          <a href="/" className="text-2xl font-bold">
             <img
               className="w-[140px] md:w-full"
               src={Logo.src}
@@ -24,10 +24,7 @@ const Header = () => {
 
           <div className="lg:flex items-center flex-1 justify-between hidden ">
             <nav className="hidden flex-1 justify-center md:flex space-x-6">
-              <a
-                href="#home"
-                className="text-[#581FC1] font-semibold text-[16px]"
-              >
+              <a href="/" className="text-[#581FC1] font-semibold text-[16px]">
                 Home
               </a>
               <a
