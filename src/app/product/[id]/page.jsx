@@ -321,7 +321,7 @@ const DetailProduct = () => {
 
         {/* Related Products */}
         <FeatureProduct
-          newstyle={'pt-0 mt-0 px-0 pb-32'}
+          newstyle={'pt-0 mt-0 pl-0 pr-0 pb-32'}
           subtitle={'Related Products'}
         ></FeatureProduct>
       </div>
